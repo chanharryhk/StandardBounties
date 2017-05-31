@@ -14,6 +14,7 @@ contract CodeBugBountyFactory is Factory {
     /// @param _bountiedContract the address of the contract to be bountied (with invariants check implemented)
     function create(
         uint _deadline,
+        string _contactInfo,
         string _data,
         uint _fulfillmentAmount,
         Bountied _bountiedContract
@@ -23,6 +24,7 @@ contract CodeBugBountyFactory is Factory {
     {
         bugBounty = new CodeBugBounty(
             _deadline,
+            _contactInfo,
             _data,
             _fulfillmentAmount,
             _bountiedContract
