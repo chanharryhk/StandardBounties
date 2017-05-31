@@ -5,33 +5,35 @@
 			"issuerContact": "test@bugbounty.eth",
 			"deadline": 10000,
 			"data": "some data",
-			"fullfilmentAmount": 200
+			"fulfillmentAmount": 200
 		},
-		"badZeroData": {
-			"issuerContact": "test@bugbounty.eth",
-			"deadline": 10000,
-			"data": "",
-			"fullfilmentAmount": 200
-		},
-		"badZeroDeadline": {
-			"issuerContact": "test@bugbounty.eth",
-			"deadline": 0,
-			"data": "some data",
-			"fullfilmentAmount": 200
-		},
-		"badZeroFullfilmentAmount": {
-			"issuerContact": "test@bugbounty.eth",
-			"deadline": 0,
-			"data": "some data",
-			"fullfilmentAmount": 0
+		"bad": {
+			"zeroData": {
+				"issuerContact": "test@bugbounty.eth",
+				"deadline": 10000,
+				"data": "",
+				"fulfillmentAmount": 200
+			},
+			"zeroDeadline": {
+				"issuerContact": "test@bugbounty.eth",
+				"deadline": 0,
+				"data": "some data",
+				"fulfillmentAmount": 200
+			},
+			"zeroFulfillmentAmount": {
+				"issuerContact": "test@bugbounty.eth",
+				"deadline": 0,
+				"data": "some data",
+				"fulfillmentAmount": 0
+			}
 		}
 	},
 	"exampleCodeBugBounties": {
-		"goodCodeBugBounty": {
+		"good": {
 			"issuerContact": "test@bugbounty.eth",
 			"deadline": 10000,
 			"data": "some contract code",
-			"fullfilmentAmount": 200,
+			"fulfillmentAmount": 200,
 			"bountiedContract": "0x0"
 		}
 	}
